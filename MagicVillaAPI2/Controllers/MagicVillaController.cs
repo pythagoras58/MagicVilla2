@@ -7,6 +7,7 @@ namespace MagicVillaAPI2.Controllers
     [ApiController]
     public class MagicVillaController : ControllerBase
     {
+        [HttpGet]
         public IEnumerable<VillaModel> GetVillaModels()
         {
             return new List<VillaModel>
@@ -15,5 +16,6 @@ namespace MagicVillaAPI2.Controllers
                 new VillaModel {Id=2,Name="Beach View"}
             };
         }
+        
     }
 }
